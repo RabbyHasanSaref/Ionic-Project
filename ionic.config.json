@@ -1,7 +1,0 @@
-{
-  "name": "My-Ionic",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
