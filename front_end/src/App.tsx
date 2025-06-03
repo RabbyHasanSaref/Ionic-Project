@@ -55,6 +55,7 @@ const App = () => (
             )}
           />
         ))}
+
         <Route
             render={() => (
               <MainLayout>
@@ -62,6 +63,7 @@ const App = () => (
               </MainLayout>
             )}
           />
+          
       </Switch>
     </IonRouterOutlet>
   </IonReactRouter>
