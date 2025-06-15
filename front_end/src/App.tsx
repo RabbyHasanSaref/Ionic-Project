@@ -34,7 +34,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import NotFound from './components/NotFound';
+import NotFound from './pages/NotFound';
 
 setupIonicReact();
 
@@ -63,7 +63,7 @@ const App = () => (
               </MainLayout>
             )}
           />
-          
+
       </Switch>
     </IonRouterOutlet>
   </IonReactRouter>

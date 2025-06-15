@@ -43,15 +43,11 @@ const Header: React.FC = () => {
         <IonContent>
           <IonList>
             <IonItem lines="full">
-              <h2>My Profile</h2>
+              <h2 style={{ fontWeight: 400, fontSize: '1.5rem', marginBottom: '1rem' }}>Profile</h2>
             </IonItem>
             <IonItem button routerLink="/edit-profile">
               <IonIcon icon="information-circle-outline" slot="start" />
               Edit Profile
-            </IonItem>
-            <IonItem button routerLink="/change-password">
-              <IonIcon icon="settings-outline" slot="start" />
-              Change Password
             </IonItem>
             <IonItem button routerLink="/saved-articles">
               <IonIcon icon="bookmark-outline" slot="start" />
@@ -59,7 +55,7 @@ const Header: React.FC = () => {
             </IonItem>
 
             <IonItem lines="full">
-              <h2>General</h2>
+              <h2 style={{ fontWeight: 400, fontSize: '1.5rem', marginBottom: '1rem' }}>General</h2>
             </IonItem>
             <IonItem button routerLink="/about">
               <IonIcon icon="information-circle-outline" slot="start" />
@@ -72,7 +68,7 @@ const Header: React.FC = () => {
           </IonList>
 
           <IonList className="ion-padding">
-            <IonButton expand="block">
+            <IonButton expand="block" color={'danger'}>
               <IonIcon icon={logOutOutline} slot="start" />
               Logout
             </IonButton>
@@ -85,10 +81,19 @@ const Header: React.FC = () => {
         <IonToolbar>
           <IonButtons slot="start">
             <IonMenuButton>
-              <IonIcon icon={personOutline} />
+            <img
+                src="https://i.ibb.co/FqJZ5w16/user.png"
+                alt="User Avatar"
+                style={{
+                  width: 32,
+                  height: 32,
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                }}
+              />
             </IonMenuButton>
           </IonButtons>
-          <IonTitle className="ion-text-center" style={{ width: '100%' }}>
+          <IonTitle className="ion-text-center" style={{ width: '100%', fontWeight: 600 }} >
             News Paper
           </IonTitle>
           <IonButtons slot="end">
